@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
   
     config.vm.provider "virtualbox" do |vb|
       vb.memory = "6000"
-      vb.customize ["modifyvm", :id, "--cpus", "2"]
+      vb.customize ["modifyvm", :id, "--cpus", "4"]
     end
   
     # you can share any folders with the guest machine 
